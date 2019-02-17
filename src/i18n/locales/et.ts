@@ -20,160 +20,160 @@ export class et implements Locale {
   }
 
   anErrorOccuredWhenGeneratingTheExpressionD() {
-    return "An error occured when generating the expression description.  Check the cron expression syntax.";
+    return "Avaldise kirjelduse genereerimisel tekkis viga. Kontroli cron avalidse süntaksit.";
   }
   everyMinute() {
-    return "every minute";
+    return "iga minut";
   }
   everyHour() {
-    return "every hour";
+    return "iga tund";
   }
   atSpace() {
-    return "At ";
+    return "Kell ";
   }
   everyMinuteBetweenX0AndX1() {
-    return "Every minute between %s and %s";
+    return "Iga minut vahemikus %s ja %s";
   }
   at() {
-    return "At";
+    return "Kell";
   }
   spaceAnd() {
-    return " and";
+    return " ja";
   }
   everySecond() {
-    return "every second";
+    return "iga sekund";
   }
   everyX0Seconds() {
-    return "every %s seconds";
+    return "iga %s. sekund"; // todo
   }
   secondsX0ThroughX1PastTheMinute() {
-    return "seconds %s through %s past the minute";
+    return "minuti %s. kuni %s. sekundis"; // todo
   }
   atX0SecondsPastTheMinute() {
-    return "at %s seconds past the minute";
+    return "minuti %s. sekundis"; // todo
   }
   everyX0Minutes() {
-    return "every %s minutes";
+    return "igal %s. minutil";
   }
   minutesX0ThroughX1PastTheHour() {
-    return "minutes %s through %s past the hour";
+    return "minutid %s kuni %s tunnis"; // todo
   }
   atX0MinutesPastTheHour() {
-    return "at %s minutes past the hour";
+    return "tunni %s. minutil"; // todo
   }
   everyX0Hours() {
-    return "every %s hours";
+    return "iga %s. tund";
   }
   betweenX0AndX1() {
-    return "between %s and %s";
+    return "vahemikus %s ja %s";
   }
   atX0() {
-    return "at %s";
+    return "kell %s";
   }
   commaEveryDay() {
-    return ", every day";
+    return ", iga päev";
   }
   commaEveryX0DaysOfTheWeek() {
-    return ", every %s days of the week";
+    return ", nädala igal %s. päeval";
   }
   commaX0ThroughX1() {
-    return ", %s through %s";
+    return ", %s kuni %s";
   }
   first() {
-    return "first";
+    return "esimene";
   }
   second() {
-    return "second";
+    return "teine";
   }
   third() {
-    return "third";
+    return "kolmas";
   }
   fourth() {
-    return "fourth";
+    return "neljas";
   }
   fifth() {
-    return "fifth";
+    return "viies";
   }
   commaOnThe() {
-    return ", on the ";
+    return ", on the "; //todo
   }
   spaceX0OfTheMonth() {
-    return " %s of the month";
+    return " %s kuus"; //todo
   }
   lastDay() {
-    return "the last day";
+    return "viimane päev";
   }
   commaOnTheLastX0OfTheMonth() {
-    return ", on the last %s of the month";
+    return ", kuu viimasel %s";
   }
   commaOnlyOnX0() {
-    return ", only on %s";
+    return ", ainult %s";
   }
   commaAndOnX0() {
-    return ", and on %s";
+    return ", ja %s";
   }
   commaEveryX0Months() {
-    return ", every %s months";
+    return ", igal %s kuul";
   }
   commaOnlyInX0() {
-    return ", only in %s";
+    return ", ainult %s";
   }
   commaOnTheLastDayOfTheMonth() {
-    return ", on the last day of the month";
+    return ", kuu viimasel päeval";
   }
   commaOnTheLastWeekdayOfTheMonth() {
-    return ", on the last weekday of the month";
+    return ", kuu viimasel nädalapäeval";
   }
   commaDaysBeforeTheLastDayOfTheMonth() {
-    return ", %s days before the last day of the month";
+    return ", %s päeva enne kuu viimast päeva";
   }
   firstWeekday() {
-    return "first weekday";
+    return "esimene nädalapäev";
   }
   weekdayNearestDayX0() {
-    return "weekday nearest day %s";
+    return "nädalapäeva lähim päev %s";
   }
   commaOnTheX0OfTheMonth() {
-    return ", on the %s of the month";
+    return ", kuu igal %";
   }
   commaEveryX0Days() {
-    return ", every %s days";
+    return ", iga %s päeva järel";
   }
   commaBetweenDayX0AndX1OfTheMonth() {
-    return ", between day %s and %s of the month";
+    return ", vahemikus päeval %s ja %s kuus";
   }
   commaOnDayX0OfTheMonth() {
-    return ", on day %s of the month";
+    return ", kuu %s. päeval";
   }
   commaEveryMinute() {
-    return ", every minute";
+    return ", iga minut";
   }
   commaEveryHour() {
-    return ", every hour";
+    return ", iga tund";
   }
   commaEveryX0Years() {
-    return ", every %s years";
+    return ", iga %s aasta";
   }
   commaStartingX0() {
-    return ", starting %s";
+    return ", alates %s";
   }
   daysOfTheWeek() {
-    return ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return ["Pühapäev", "Esmaspäev", "Teisipäev", "Kolmapäev", "Neljapäev", "Reede", "Laupäev"];
   }
   monthsOfTheYear() {
     return [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
+      "Jaanuar",
+      "Veebruar",
+      "Märts",
+      "Aprill",
+      "Mai",
+      "Juuni",
+      "Juuli",
       "August",
       "September",
-      "October",
+      "Oktoober",
       "November",
-      "December"
+      "Detsember"
     ];
   }
 }
