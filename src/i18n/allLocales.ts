@@ -22,4 +22,4 @@ export { sk } from "./locales/sk"; // Slovakian
 export { fi } from "./locales/fi";
 export { sl } from "./locales/sl"; // Slovenian
 export { sw } from "./locales/sw"; // Swahili
-
+export { et } from "./locales/et"; // Estonian
