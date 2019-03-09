@@ -1,17 +1,19 @@
 # cRonstrue [![Build Status](https://travis-ci.org/bradymholt/cRonstrue.svg?branch=master)](https://travis-ci.org/bradymholt/cRonstrue) [![NPM Package](https://img.shields.io/npm/v/cronstrue.svg)](https://www.npmjs.com/package/cronstrue)
 
-cRonstrue is a JavaScript library that parses a cron expression and outputs a human readable description of the cron schedule.  For example, given the expression "*/5 * * * *" it will output "Every 5 minutes".
+cRonstrue is a JavaScript library that parses a cron expression and outputs a human readable description of the cron schedule. For example, given the expression "_/5 _ \* \* \*" it will output "Every 5 minutes".
 
 This library was ported from the original C# implemenation called [cron-expression-descriptor](https://github.com/bradymholt/cron-expression-descriptor) and is also available in a [few other languages](https://github.com/bradymholt/cron-expression-descriptor#ports).
 
 ## Features
+
 - Zero dependencies
-- Supports all cron expression special characters including * / , - ? L W, #
+- Supports all cron expression special characters including \* / , - ? L W, #
 - Supports 5, 6 (w/ seconds or year), or 7 (w/ seconds and year) part cron expressions
 - Supports [Quartz Job Scheduler](http://www.quartz-scheduler.org/) cron expressions
-- i18n support with 24 languages
+- i18n support with 25 languages
 
 ## Installation
+
 cRonstrue is exported as an [UMD](https://github.com/umdjs/umd) module so it will work in an [AMD](https://github.com/amdjs/amdjs-api/wiki/AMD), [CommonJS](http://wiki.commonjs.org/wiki/CommonJS) or browser global context.
 
 First, install the module:
@@ -25,17 +27,18 @@ Then, depending upon your usage context, add a reference to it:
 ### Node
 
 ```js
-var cronstrue = require('cronstrue');
+var cronstrue = require("cronstrue");
 ```
 
 ### ESM / webpack / TypeScript
 
 ```js
-import cronstrue from 'cronstrue';
+import cronstrue from "cronstrue";
 ```
 
 ### Browser
- The `cronstrue.min.js` file from the `/dist` folder in the npm package should be served to the browser.  There are no dependencies so you can simply include the library in a `<script>` tag.
+
+The `cronstrue.min.js` file from the `/dist` folder in the npm package should be served to the browser. There are no dependencies so you can simply include the library in a `<script>` tag.
 
 ```html
 <script src="cronstrue.min.js" type="text/javascript"></script>
@@ -47,7 +50,7 @@ import cronstrue from 'cronstrue';
 #### CDN
 
 A simple way to load the library in a browser is by using the [unpkg](https://unpkg.com/) CDN, which is a
-"fast, global content delivery network for everything on npm".  To use it, include a script tag like this in your file:
+"fast, global content delivery network for everything on npm". To use it, include a script tag like this in your file:
 
 ```html
 <script src="https://unpkg.com/cronstrue@latest/dist/cronstrue.min.js" async></script>
@@ -82,16 +85,19 @@ A demo is available here [here](http://bradymholt.github.io/cRonstrue/#cronstrue
 
 ## i18n
 
-To use the i18n support cRonstrue provides, you must use the packaged library that contains the locale transalations.  Once you do this, you can pass the name of a supported locale as an option to  `cronstrue.toString()`.  For example, for the es (Spanish) locale, you would use: `cronstrue.toString("* * * * *", { locale: "es" });`.
+To use the i18n support cRonstrue provides, you must use the packaged library that contains the locale transalations. Once you do this, you can pass the name of a supported locale as an option to `cronstrue.toString()`. For example, for the es (Spanish) locale, you would use: `cronstrue.toString("* * * * *", { locale: "es" });`.
 
 ### Node
+
 ```js
-var cronstrue = require('cronstrue/i18n');
+var cronstrue = require("cronstrue/i18n");
 cronstrue.toString("*/5 * * * *", { locale: "fr" });
 ```
+
 ### Browser
- The `cronstrue-i18n.min.js` file from the `/dist` folder in the npm package should be served to the browser.
- 
+
+The `cronstrue-i18n.min.js` file from the `/dist` folder in the npm package should be served to the browser.
+
 ```html
 <script src="cronstrue-i18n.min.js" type="text/javascript"></script>
 <script>
@@ -125,6 +131,7 @@ cronstrue.toString("*/5 * * * *", { locale: "fr" });
 - uk - Ukrainian
 - zh_CN - Chinese (Simplified)
 - zh_TW - Chinese (Traditional)
+- et - Estonian
 
 ## License
 

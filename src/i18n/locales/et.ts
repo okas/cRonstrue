@@ -32,7 +32,7 @@ export class et implements Locale {
     return "Kell ";
   }
   everyMinuteBetweenX0AndX1() {
-    return "Iga minut vahemikus %s ja %s";
+    return "Igal minutil vahemikus %s ja %s";
   }
   at() {
     return "Kell";
@@ -41,22 +41,22 @@ export class et implements Locale {
     return " ja";
   }
   everySecond() {
-    return "iga sekund";
+    return "igal sekundil";
   }
   everyX0Seconds() {
-    return "iga %s. sekund"; // todo
+    return "igal %s. sekundil"; // todo
   }
   secondsX0ThroughX1PastTheMinute() {
-    return "minuti %s. kuni %s. sekundis"; // todo
+    return "minuti %s. kuni %s. sekunditel"; // todo
   }
   atX0SecondsPastTheMinute() {
-    return "minuti %s. sekundis"; // todo
+    return "minuti %s. sekundil"; // todo
   }
   everyX0Minutes() {
     return "igal %s. minutil";
   }
   minutesX0ThroughX1PastTheHour() {
-    return "minutid %s kuni %s tunnis"; // todo
+    return "vahemikus %s kuni %s"; // todo
   }
   atX0MinutesPastTheHour() {
     return "tunni %s. minutil"; // todo
@@ -74,7 +74,7 @@ export class et implements Locale {
     return ", iga päev";
   }
   commaEveryX0DaysOfTheWeek() {
-    return ", nädala igal %s. päeval";
+    return ", %s nädala päeval";
   }
   commaX0ThroughX1() {
     return ", %s kuni %s";
@@ -98,16 +98,16 @@ export class et implements Locale {
     return ", on the "; //todo
   }
   spaceX0OfTheMonth() {
-    return " %s kuus"; //todo
+    return " kuu %s"; //todo
   }
   lastDay() {
-    return "viimane päev";
+    return "viimasel päeval";
   }
   commaOnTheLastX0OfTheMonth() {
     return ", kuu viimasel %s";
   }
   commaOnlyOnX0() {
-    return ", ainult %s";
+    return ", üksnes %s";
   }
   commaAndOnX0() {
     return ", ja %s";
@@ -116,7 +116,7 @@ export class et implements Locale {
     return ", igal %s kuul";
   }
   commaOnlyInX0() {
-    return ", ainult %s";
+    return ", üksnes %s";
   }
   commaOnTheLastDayOfTheMonth() {
     return ", kuu viimasel päeval";
@@ -146,13 +146,13 @@ export class et implements Locale {
     return ", kuu %s. päeval";
   }
   commaEveryMinute() {
-    return ", iga minut";
+    return ", igal minutil";
   }
   commaEveryHour() {
-    return ", iga tund";
+    return ", igal tunnil";
   }
   commaEveryX0Years() {
-    return ", iga %s aasta";
+    return ", igal %s. aastal";
   }
   commaStartingX0() {
     return ", alates %s";

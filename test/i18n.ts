@@ -234,4 +234,26 @@ describe("i18n", function() {
       assert.equal(construe.toString(this.test.title, { locale: "sl" }), "Vsako minuto");
     });
   });
+
+  describe("et", function() {
+    it("* * * * *", function() {
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Iga minut");
+    });
+
+    it("* * * * * *", function() {
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Iga sekund");
+    });
+
+    it("10 * * * *", function() {
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Tunni 10. minutil");
+    });
+
+    it("10-35/2 * * * *", function() {
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Igal 2. minutil, vahemikus 10 kuni 35");
+    });
+
+    it("* 3-5 * * *", function() {
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Igal minut, vahemikus 03:00 kuni 05:59");
+    });
+  });
 });
