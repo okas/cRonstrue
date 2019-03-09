@@ -110,6 +110,7 @@ The `cronstrue-i18n.min.js` file from the `/dist` folder in the npm package shou
 - en - English
 - cs - Czech
 - es - Spanish
+- et - Estonian
 - da - Danish
 - de - German
 - fi - Finnish
@@ -131,7 +132,6 @@ The `cronstrue-i18n.min.js` file from the `/dist` folder in the npm package shou
 - uk - Ukrainian
 - zh_CN - Chinese (Simplified)
 - zh_TW - Chinese (Traditional)
-- et - Estonian
 
 ## License
 
