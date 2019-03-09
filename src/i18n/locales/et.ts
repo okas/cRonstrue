@@ -23,16 +23,16 @@ export class et implements Locale {
     return "Avaldise kirjelduse genereerimisel tekkis viga. Kontroli cron avalidse süntaksit.";
   }
   everyMinute() {
-    return "iga minut";
+    return "igal minutil";
   }
   everyHour() {
-    return "iga tund";
+    return "igal tunnil";
   }
   atSpace() {
     return "Kell ";
   }
   everyMinuteBetweenX0AndX1() {
-    return "Igal minutil vahemikus %s ja %s";
+    return "Igal minutil vahemikus %s kuni %s";
   }
   at() {
     return "Kell";
@@ -65,7 +65,7 @@ export class et implements Locale {
     return "iga %s. tund";
   }
   betweenX0AndX1() {
-    return "vahemikus %s ja %s";
+    return "vahemikus %s kuni %s";
   }
   atX0() {
     return "kell %s";
@@ -140,7 +140,7 @@ export class et implements Locale {
     return ", iga %s päeva järel";
   }
   commaBetweenDayX0AndX1OfTheMonth() {
-    return ", vahemikus päeval %s ja %s kuus";
+    return ", kuu päevadel vahemikus %s kuni %s";
   }
   commaOnDayX0OfTheMonth() {
     return ", kuu %s. päeval";

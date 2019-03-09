@@ -237,11 +237,11 @@ describe("i18n", function() {
 
   describe("et", function() {
     it("* * * * *", function() {
-      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Iga minut");
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Igal minutil");
     });
 
     it("* * * * * *", function() {
-      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Iga sekund");
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Igal sekundil");
     });
 
     it("10 * * * *", function() {
@@ -253,7 +253,7 @@ describe("i18n", function() {
     });
 
     it("* 3-5 * * *", function() {
-      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Igal minut, vahemikus 03:00 kuni 05:59");
+      assert.equal(construe.toString(this.test.title, { locale: "et" }), "Igal minutil, vahemikus 03:00 kuni 05:59");
     });
   });
 });
