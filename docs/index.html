@@ -32,7 +32,7 @@
 
             <section id="main_content">
                 <h1 id="cronstrue-build-status-npm-package">cRonstrue <a href="https://travis-ci.org/bradymholt/cRonstrue"><img src="https://travis-ci.org/bradymholt/cRonstrue.svg?branch=master" alt="Build Status"></a> <a href="https://www.npmjs.com/package/cronstrue"><img src="https://img.shields.io/npm/v/cronstrue.svg" alt="NPM Package"></a></h1>
-<p>cRonstrue is a JavaScript library that parses a cron expression and outputs a human readable description of the cron schedule.  For example, given the expression &quot;*/5 * * * *&quot; it will output &quot;Every 5 minutes&quot;.</p>
+<p>cRonstrue is a JavaScript library that parses a cron expression and outputs a human readable description of the cron schedule. For example, given the expression &quot;_/5 _ * * *&quot; it will output &quot;Every 5 minutes&quot;.</p>
 <p>This library was ported from the original C# implemenation called <a href="https://github.com/bradymholt/cron-expression-descriptor">cron-expression-descriptor</a> and is also available in a <a href="https://github.com/bradymholt/cron-expression-descriptor#ports">few other languages</a>.</p>
 <h2 id="features">Features</h2>
 <ul>
@@ -40,25 +40,25 @@
 <li>Supports all cron expression special characters including * / , - ? L W, #</li>
 <li>Supports 5, 6 (w/ seconds or year), or 7 (w/ seconds and year) part cron expressions</li>
 <li>Supports <a href="http://www.quartz-scheduler.org/">Quartz Job Scheduler</a> cron expressions</li>
-<li>i18n support with 24 languages</li>
+<li>i18n support with 25 languages</li>
 </ul>
 <h2 id="installation">Installation</h2>
 <p>cRonstrue is exported as an <a href="https://github.com/umdjs/umd">UMD</a> module so it will work in an <a href="https://github.com/amdjs/amdjs-api/wiki/AMD">AMD</a>, <a href="http://wiki.commonjs.org/wiki/CommonJS">CommonJS</a> or browser global context.</p>
 <p>First, install the module:</p>
 <pre><code>npm install cronstrue</code></pre><p>Then, depending upon your usage context, add a reference to it:</p>
 <h3 id="node">Node</h3>
-<pre><code class="language-js">var cronstrue = require(&#39;cronstrue&#39;);</code></pre>
+<pre><code class="language-js">var cronstrue = require(&quot;cronstrue&quot;);</code></pre>
 <h3 id="esm-webpack-typescript">ESM / webpack / TypeScript</h3>
-<pre><code class="language-js">import cronstrue from &#39;cronstrue&#39;;</code></pre>
+<pre><code class="language-js">import cronstrue from &quot;cronstrue&quot;;</code></pre>
 <h3 id="browser">Browser</h3>
-<p> The <code>cronstrue.min.js</code> file from the <code>/dist</code> folder in the npm package should be served to the browser.  There are no dependencies so you can simply include the library in a <code>&lt;script&gt;</code> tag.</p>
+<p>The <code>cronstrue.min.js</code> file from the <code>/dist</code> folder in the npm package should be served to the browser. There are no dependencies so you can simply include the library in a <code>&lt;script&gt;</code> tag.</p>
 <pre><code class="language-html">&lt;script src=&quot;cronstrue.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   var cronstrue = window.cronstrue;
 &lt;/script&gt;</code></pre>
 <h4 id="cdn">CDN</h4>
 <p>A simple way to load the library in a browser is by using the <a href="https://unpkg.com/">unpkg</a> CDN, which is a
-&quot;fast, global content delivery network for everything on npm&quot;.  To use it, include a script tag like this in your file:</p>
+&quot;fast, global content delivery network for everything on npm&quot;. To use it, include a script tag like this in your file:</p>
 <pre><code class="language-html">&lt;script src=&quot;https://unpkg.com/cronstrue@latest/dist/cronstrue.min.js&quot; async&gt;&lt;/script&gt;</code></pre>
 <p>Using the &quot;latest&quot; tag will result in a 302 redirect to the latest version tag so it is highly recommended to use a specific version tag such as <a href="https://unpkg.com/cronstrue@1.48.0/dist/cronstrue.min.js">https://unpkg.com/cronstrue@1.48.0/dist/cronstrue.min.js</a> to avoid this redirect.</p>
 <h2 id="usage">Usage</h2>
@@ -80,12 +80,12 @@ cronstrue.toString(&quot;* * * ? * 2-6/2&quot;, { dayOfWeekStartIndexZero: false
 <h2 id="demo">Demo</h2>
 <p>A demo is available here <a href="http://bradymholt.github.io/cRonstrue/#cronstrue-demo">here</a>.</p>
 <h2 id="i18n">i18n</h2>
-<p>To use the i18n support cRonstrue provides, you must use the packaged library that contains the locale transalations.  Once you do this, you can pass the name of a supported locale as an option to  <code>cronstrue.toString()</code>.  For example, for the es (Spanish) locale, you would use: <code>cronstrue.toString(&quot;* * * * *&quot;, { locale: &quot;es&quot; });</code>.</p>
+<p>To use the i18n support cRonstrue provides, you must use the packaged library that contains the locale transalations. Once you do this, you can pass the name of a supported locale as an option to <code>cronstrue.toString()</code>. For example, for the es (Spanish) locale, you would use: <code>cronstrue.toString(&quot;* * * * *&quot;, { locale: &quot;es&quot; });</code>.</p>
 <h3 id="node">Node</h3>
-<pre><code class="language-js">var cronstrue = require(&#39;cronstrue/i18n&#39;);
+<pre><code class="language-js">var cronstrue = require(&quot;cronstrue/i18n&quot;);
 cronstrue.toString(&quot;*/5 * * * *&quot;, { locale: &quot;fr&quot; });</code></pre>
 <h3 id="browser">Browser</h3>
-<p> The <code>cronstrue-i18n.min.js</code> file from the <code>/dist</code> folder in the npm package should be served to the browser.</p>
+<p>The <code>cronstrue-i18n.min.js</code> file from the <code>/dist</code> folder in the npm package should be served to the browser.</p>
 <pre><code class="language-html">&lt;script src=&quot;cronstrue-i18n.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
   cronstrue.toString(&quot;*/5 * * * *&quot;, { locale: &quot;fr&quot; });
@@ -95,6 +95,7 @@ cronstrue.toString(&quot;*/5 * * * *&quot;, { locale: &quot;fr&quot; });</code><
 <li>en - English</li>
 <li>cs - Czech</li>
 <li>es - Spanish</li>
+<li>et - Estonian</li>
 <li>da - Danish</li>
 <li>de - German</li>
 <li>fi - Finnish</li>

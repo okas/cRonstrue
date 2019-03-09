@@ -2,6 +2,7 @@ export { en } from "./locales/en";
 export { da } from "./locales/da";
 export { de } from "./locales/de";
 export { es } from "./locales/es";
+export { et } from "./locales/et";
 export { fr } from "./locales/fr";
 export { it } from "./locales/it";
 export { nl } from "./locales/nl";
