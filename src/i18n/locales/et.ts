@@ -107,7 +107,7 @@ export class et implements Locale {
     return ", kuu viimasel %s";
   }
   commaOnlyOnX0() {
-    return ", üksnes %s";
+    return ", ainult %s";
   }
   commaAndOnX0() {
     return ", ja %s";
@@ -116,7 +116,7 @@ export class et implements Locale {
     return ", igal %s kuul";
   }
   commaOnlyInX0() {
-    return ", üksnes %s";
+    return ", ainult %s";
   }
   commaOnTheLastDayOfTheMonth() {
     return ", kuu viimasel päeval";
